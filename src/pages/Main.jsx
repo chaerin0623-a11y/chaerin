@@ -18,7 +18,7 @@ export default function Main({ onSelectCategory }) {
         <div className="profile-image-container">
           {/* public/images/profile.jpg 에 본인 사진을 넣으세요! */}
           <img 
-            src="/images/chaerin.jpg" 
+            src="./public/images/chaerin.jpg" 
             alt="Profile" 
             className="profile-image"
             onError={(e) => {
