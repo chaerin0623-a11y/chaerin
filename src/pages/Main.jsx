@@ -16,17 +16,12 @@ export default function Main({ onSelectCategory }) {
       {/* 👤 1. 상단 프로필 및 개인정보 섹션 */}
       <section className="profile-section">
         <div className="profile-image-container">
-          {/* public/images/profile.jpg 에 본인 사진을 넣으세요! */}
-          <img 
-            src="./public/images/chaerin.jpg" 
-            alt="Profile" 
-            className="profile-image"
-            onError={(e) => {
-              // 사진이 아직 없을 때 대체해주는 더미 이미지
-              e.target.src = 'https://via.placeholder.com/300x400/1e293b/ffffff?text=PROFILE+IMAGE';
-            }}
-          />
-        </div>
+  <img 
+    src={`${import.meta.env.BASE_URL}images/profile.jpg`} 
+    alt="Profile" 
+    className="profile-image"
+  />
+</div>
 
         <div className="profile-info-container">
           <h1 className="profile-name">김채린</h1>
