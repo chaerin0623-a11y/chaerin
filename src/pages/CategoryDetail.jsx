@@ -16,7 +16,7 @@ const allWorks = [
   "후반 포스트 프로덕션 작업에서는 노이즈 리덕션 및 앰비언스 믹싱을 거쳐 화면과 완벽히 맞물리는 오디오 밸런스를 구축했습니다.",
   "작품 전반에 걸친 세심한 사운드 설계를 통해 영화의 전체적인 완성도를 끌어올렸습니다."
 ],
-    image: '/images/IMG_2867.png'
+    image: `${import.meta.env.BASE_URL}images/IMG_2867.png`
   },
   { 
     id: 2, 
@@ -25,7 +25,7 @@ const allWorks = [
     role: '연출 / 기획', 
     desc: '작품에 대한 간단한 소개입니다.',
     overview: '이 작품은 기획 단계부터 시나리오 작성, 연출 구성을 전담하여 진행한 프로젝트입니다.',
-    image: '/images/IMG_2867.png'
+    image: `${import.meta.env.BASE_URL}images/IMG_2867.png`
   },
   {
     id: 4, // 필요시 id 번호 조정
