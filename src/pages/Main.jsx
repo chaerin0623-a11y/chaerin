@@ -13,6 +13,30 @@ const categories = [
 export default function Main({ onSelectCategory }) {
   return (
     <main className="main-container">
+
+       <section className="categories-section">
+        <h2 className="section-label">PROJECT CATEGORIES</h2>
+        <nav className="menu-list">
+          {categories.map((item) => (
+            <div
+              key={item.id}
+              className="menu-item"
+              onClick={() => onSelectCategory(item)}
+            >
+              <span className="menu-title">{item.title}</span>
+              <span className="menu-sub">{item.sub}</span>
+            </div>
+          ))}
+        </nav>
+      </section>
+
+         {/* 🔽 스크롤 유도 안내 */}
+      <div className="scroll-indicator">
+        <span>SCROLL DOWN</span>
+        <div className="arrow">↓</div>
+      </div>
+
+
       {/* 👤 1. 상단 프로필 및 개인정보 섹션 */}
       <section className="profile-section">
         <div className="profile-image-container">
@@ -48,28 +72,7 @@ export default function Main({ onSelectCategory }) {
         </div>
       </section>
 
-      {/* 🔽 스크롤 유도 안내 */}
-      <div className="scroll-indicator">
-        <span>SCROLL DOWN</span>
-        <div className="arrow">↓</div>
-      </div>
-
-      {/* 🎬 2. 기존 카테고리 메뉴 섹션 (스크롤 내리면 보임) */}
-      <section className="categories-section">
-        <h2 className="section-label">PROJECT CATEGORIES</h2>
-        <nav className="menu-list">
-          {categories.map((item) => (
-            <div
-              key={item.id}
-              className="menu-item"
-              onClick={() => onSelectCategory(item)}
-            >
-              <span className="menu-title">{item.title}</span>
-              <span className="menu-sub">{item.sub}</span>
-            </div>
-          ))}
-        </nav>
-      </section>
+    
     </main>
   );
 }
