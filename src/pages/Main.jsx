@@ -16,12 +16,12 @@ export default function Main({ onSelectCategory }) {
       {/* 👤 1. 상단 프로필 및 개인정보 섹션 */}
       <section className="profile-section">
         <div className="profile-image-container">
-  <img 
-    src={`${import.meta.env.BASE_URL}images/profile.jpg`} 
-    alt="Profile" 
-    className="profile-image"
-  />
-</div>
+          <img 
+            src={`${import.meta.env.BASE_URL}images/chaerin.jpg`} 
+            alt="Profile" 
+            className="profile-image"
+          />
+        </div>
 
         <div className="profile-info-container">
           <h1 className="profile-name">김채린</h1>
