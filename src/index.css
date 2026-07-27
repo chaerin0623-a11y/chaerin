@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* 딥 블루 -> 인디고 -> 다크 네이비로 이어지는 파랑 그라데이션 */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

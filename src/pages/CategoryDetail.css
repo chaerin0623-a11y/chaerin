@@ -1,0 +1,77 @@
+.detail-container {
+  padding: 100px 40px 40px 40px;
+  min-height: 100vh;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* 테두리 및 배경 (보내주신 카드와 동일한 톤) */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(0, 114, 255, 0.15));
+  backdrop-filter: blur(10px);
+  border-radius: 12px; /* 둥근 모서리 */
+  
+  /* 버튼 크기 및 텍스트 설정 */
+  width: 48px;
+  height: 30px;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  border-color: #60a6c2;
+  background: linear-gradient(135deg, rgba(0, 198, 255, 0.2), rgba(0, 114, 255, 0.3));
+  transform: translateX(-3px); /* 마우스 올리면 살짝 왼쪽으로 이동 */
+}
+
+.detail-title {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 25px 0 10px 0;
+  text-transform: uppercase;
+}
+
+.detail-sub {
+  font-family: sans-serif;
+  margin-bottom: 40px;
+  opacity: 0.85;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* 회색 제거 -> 파란색 틴트가 섞인 고급스러운 반투명 카드 */
+.work-card {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(0, 114, 255, 0.15));
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  border-color: #00c6ff;
+  background: linear-gradient(135deg, rgba(0, 198, 255, 0.2), rgba(0, 114, 255, 0.3));
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* 작업 카드 내부 설명문 스타일 */
+.work-card-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre-line; /* 👈 백틱(` `) 안의 줄바꿈과 엔터를 화면에 그대로 반영! */
+  opacity: 0.8;
+  margin-top: 8px;
+}
