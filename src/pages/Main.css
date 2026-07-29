@@ -3,6 +3,7 @@
   padding: 60px 40px 120px 40px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 100px;
 }
 
 /* ==========================================
@@ -84,6 +85,7 @@
   font-size: 0.85rem;
   letter-spacing: 2px;
   animation: bounce 2s infinite;
+    padding-top: 100px;
 }
 
 @keyframes bounce {
@@ -159,4 +161,15 @@
     max-width: 240px;
     height: 300px;
   }
+}
+.font-light {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', sans-serif !important;
+  font-weight: 400 !important; /* 얇은 굵기 지정 */
+  letter-spacing: 0.2px; /* 영문/숫자 자간 정돈 */
+}
+
+.profile-group p,
+.profile-group li {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+  font-weight: 400;
 }

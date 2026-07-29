@@ -1,14 +1,39 @@
 import React from 'react';
 import './Main.css';
 
-const categories = [
-  { id: 'short-films', title: 'SHORT FILMS', sub: '단편영화' },
-  { id: 'short-dramas', title: 'SHORT DRAMAS', sub: '단편드라마' },
-  { id: 'freelance', title: 'FREELANCE WORK', sub: '프리랜서' },
-  { id: 'activities', title: 'ACTIVITIES', sub: '교내외 활동' },
-  { id: 'media-ambassador', title: 'MEDIA AMBASSADOR', sub: '미디어 홍보대사' },
-  { id: 'awards', title: 'AWARDS & CONTESTS', sub: '공모전' },
+  const categories = [
+  { 
+    id: 'short-films', 
+    title: 'SHORT FILMS', 
+    sub: '단편영화',
+    desc: '현장 녹음부터 후반 사운드 디렉팅까지 총괄한 단편영화 작업물입니다.'
+  },
+  { 
+    id: 'youtube', 
+    title: 'YOUTUBER', 
+    sub: '유튜버 [산타니]',
+    desc: '현장 녹음부터 후반 사운드 디렉팅까지 총괄한 단편영화 작업물입니다.'
+  },
+  { 
+    id: 'activities', 
+    title: 'ACTIVITIES', 
+    sub: '교내외 활동',
+    desc: '현장 녹음부터 후반 사운드 디렉팅까지 총괄한 단편영화 작업물입니다.'
+  },
+  { 
+    id: 'media-ambassador', 
+    title: 'MEDIA AMBASSADOR', 
+    sub: '미디어 홍보대사',
+    desc: '현장 녹음부터 후반 사운드 디렉팅까지 총괄한 단편영화 작업물입니다.'
+  },
+  { 
+    id: 'awards', 
+    title: 'AWARDS & CONTESTS', 
+    sub: '공모전',
+    desc: '현장 녹음부터 후반 사운드 디렉팅까지 총괄한 단편영화 작업물입니다.'
+  },
 ];
+
 
 export default function Main({ onSelectCategory }) {
   return (
@@ -59,15 +84,16 @@ export default function Main({ onSelectCategory }) {
           <div className="profile-group">
             <h3>EDUCATION</h3>
             <ul>
-              <li>수원대학교 (졸업예정)  </li>
-              <li>주전공: 컴퓨터소프트웨어학과 / 복수전공: 미디어커뮤니케이션학과 4.12/4.5 </li>
+              <li>수원대학교 (졸업예정)</li>
+              <li>주전공: 컴퓨터소프트웨어학과 / 복수전공: 미디어커뮤니케이션학과</li>
+              <li>학점: <span className="font-light">4.12 / 4.5</span></li>
             </ul>
           </div>
 
           <div className="profile-group">
             <h3>CONTACT</h3>
-            <p>Email: chaerin0623@naver.com</p>
-            <p>주소: 경기도 오산시 수청로 31</p>
+            <p>Email: <span className="font-light">chaerin0623@naver.com</span></p>
+            <p>주소: 경기도 오산시 수청로 <span className="font-light">31</span></p>
           </div>
         </div>
       </section>
